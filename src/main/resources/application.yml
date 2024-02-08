@@ -1,0 +1,4 @@
+jwt:
+  secret:
+    access: nznv3ZtdR3mEBRiDadZd/f7I9MQDZNU9fXO0NX28qSs=
+    refresh: NlOB4blNPIrVYxy3doSXWJeiH6qu+1YvhGmYfsRixmA=
