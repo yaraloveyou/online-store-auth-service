@@ -1,7 +1,7 @@
 package com.yarainc.auth.service.controllers;
 
 import com.yarainc.auth.service.domains.JwtAuthentication;
-import com.yarainc.auth.service.services.AuthService;
+import com.yarainc.auth.service.services.AuthServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class RoleController {
 
-    private final AuthService authService;
+    private final AuthServiceImpl authService;
 
     @PreAuthorize("hasAuthority('USER')")
     @GetMapping("user")
